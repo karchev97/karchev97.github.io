@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Вибро массаж</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/ion.rangeSlider.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/ion.rangeSlider.skinHTML5.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.11.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/ion.rangeSlider.js"></script>
+
+</head>
+<body>
+
+<div class="container main-cont">
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 logo-block">
+            <a href="#"><img src="img/logo.svg" height="75px" alt="Logo"></a>
+        </div>
+        <div class="col-lg-offset-5 col-md-offset-4 col-sm-offset-3 col-lg-4 col-md-5 col-sm-6">
+            <div class="row">
+                <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-lg-6 col-md-6 col-sm-6 number-phone-block"><div class="number-phone">8 (800) 333-00-22<br><div>звонок бесплатный</div></div></div>
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <div class="icon-menu">
+                        <div class="cart-block">
+                            <a href="" data-toggle="modal" data-target=".bd-example-modal-lg">
+                                <img src="img/cart.svg" alt="Cart" width="30px"><div class="el-cart">12</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <div class="icon-menu icon-menu2">
+                        <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <img src="img/search.svg" alt="Search" width="25px">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-default navbar-default-с">
+    <div class="container container-menu">
+        <div class="navbar-header">
+
+            <div class="menuFive navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="an-logo"><img src="img/logo3-small2.png" alt="Logo"></div>
+            <div class="navbar-brand">
+                <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <img src="img/search.svg" alt="Search" width="25px">
+                </a>
+            </div>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-collapse-c" id="navbar-main">
+            <ul class="nav navbar-nav navbar-nav-c">
+                <div class="phone-menu">
+                    <div class="number-phone text-center">8 (800) 333-00-22<br><div>звонок бесплатный</div></div>
+                </div>
+                <li class="active"><a href="#">Главная -</a></li>
+                <li><a href="#">Каталог -</a></li>
+                <li><a href="#">Акции -</a></li>
+                <li><a href="#">Скидки -</a></li>
+                <li><a href="#">Доставка и оплата -</a></li>
+                <li><a href="#">Полезная информация -</a></li>
+                <li><a href="#">Контакты -</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container search-block con-w-p">
+    <div class="collapse" id="collapseExample">
+        <div class="form-style-8">
+            <form>
+                <div class="row">
+                    <div class="col-lg-9 col-md-9 col-sm-7 col-xs-12">
+                        <input type="text" name="searrch" placeholder="Введите запрос" />
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-5 col-xs-12 text-right go-search">
+                        <input type="button" value="Найти" autofocus/>
+                        <input type="button" class="button-ex" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" value="Отмена" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div class="container second-menu">
+    <div class="row">
+
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 el-second-menu panel" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                <img src="img/chair.svg" alt="Chair">
+                <div class="text">
+                    <div class="row row-sec">
+                        <div class="col-lg-3 img-cat-block">
+                            <img src="img/ok-mark.svg" class="img-cat" alt="Chair">
+                        </div>
+                        <div class="col-lg-9 text-cat">
+                            Массажные кресла
+                        </div>
+                        <div class="col-lg-12 text-center down">
+                            <img src="img/down.svg" width="20px" alt="Down">
+                        </div>
+                    </div>
+                </div>
+                <div id="collapseOne" class="dop-menu panel-collapse collapse">
+                    <ul class="ul-menu-drop">
+                        <li><a href="#"><img src="img/right-arrow.svg" height="12px" alt="right">Домашние</a></li>
+                        <li><a href="#"><img src="img/right-arrow.svg" height="12px" alt="right">Офисные</a></li>
+                        <li><a href="#"><img src="img/right-arrow.svg" height="12px" alt="right">Вендинговые</a></li>
+                        <li><a href="#"><img src="img/right-arrow.svg" height="12px" alt="right">Для бизнеса</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 el-second-menu panel" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                <img src="img/table.svg" alt="Chair">
+                <div class="text">
+                    <div class="row row-sec">
+                        <div class="col-lg-3 img-cat-block">
+                            <img src="img/ok-mark.svg" class="img-cat" alt="Chair">
+                        </div>
+                        <div class="col-lg-9 text-cat">
+                            Массажные столы
+                        </div>
+                        <div class="col-lg-12 text-center down">
+                            <img src="img/down.svg" width="20px" alt="Down">
+                        </div>
+                    </div>
+                </div>
+                <div id="collapseTwo" class="dop-menu panel-collapse collapse">
+                    <ul class="ul-menu-drop">
+                        <li><a href="#"><img src="img/right-arrow.svg" height="12px" alt="right">Домашние</a></li>
+                        <li><a href="#"><img src="img/right-arrow.svg" height="12px" alt="right">Офисные</a></li>
+                        <li><a href="#"><img src="img/right-arrow.svg" height="12px" alt="right">Вендинговые</a></li>
+                        <li><a href="#"><img src="img/right-arrow.svg" height="12px" alt="right">Для бизнеса</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 line-drop"></div>
+
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 el-second-menu panel" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                <img src="img/massager.svg" alt="Chair">
+                <div class="text">
+                    <div class="row row-sec">
+                        <div class="col-lg-3 img-cat-block">
+                            <img src="img/ok-mark.svg" class="img-cat" alt="Chair">
+                        </div>
+                        <div class="col-lg-9 text-cat">
+                            Вибро-<br>тренажеры
+                        </div>
+                        <div class="col-lg-12 text-center down">
+                            <img src="img/down.svg" width="20px" alt="Down">
+                        </div>
+                    </div>
+                </div>
+                <div id="collapseThree" class="dop-menu panel-collapse collapse">
+                    <ul class="ul-menu-drop">
+                        <li><a href="#"><img src="img/right-arrow.svg" height="12px" alt="right">Домашние</a></li>
+                        <li><a href="#"><img src="img/right-arrow.svg" height="12px" alt="right">Офисные</a></li>
+                        <li><a href="#"><img src="img/right-arrow.svg" height="12px" alt="right">Вендинговые</a></li>
+                        <li><a href="#"><img src="img/right-arrow.svg" height="12px" alt="right">Для бизнеса</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 el-second-menu panel" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                <img src="img/foot-mas.svg" alt="Chair">
+                <div class="text">
+                    <div class="row row-sec">
+                        <div class="col-lg-3 img-cat-block">
+                            <img src="img/ok-mark.svg" class="img-cat" alt="Chair">
+                        </div>
+                        <div class="col-lg-9 text-cat">
+                            Массажеры для ног
+                        </div>
+                        <div class="col-lg-12 text-center down">
+                            <img src="img/down.svg" width="20px" alt="Down">
+                        </div>
+                    </div>
+                </div>
+                <div id="collapseFour" class="dop-menu panel-collapse collapse">
+                    <ul class="ul-menu-drop">
+                        <li><a href="#"><img src="img/right-arrow.svg" height="12px" alt="right">Домашние</a></li>
+                        <li><a href="#"><img src="img/right-arrow.svg" height="12px" alt="right">Офисные</a></li>
+                        <li><a href="#"><img src="img/right-arrow.svg" height="12px" alt="right">Вендинговые</a></li>
+                        <li><a href="#"><img src="img/right-arrow.svg" height="12px" alt="right">Для бизнеса</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 line-drop"></div>
+
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 el-second-menu panel" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                <img src="img/capes.svg" alt="Chair">
+                <div class="text">
+                    <div class="row row-sec">
+                        <div class="col-lg-3 img-cat-block">
+                            <img src="img/ok-mark.svg" class="img-cat" alt="Chair">
+                        </div>
+                        <div class="col-lg-9 text-cat">
+                            Массажные накидки
+                        </div>
+                        <div class="col-lg-12 text-center down">
+                            <img src="img/down.svg" width="20px" alt="Down">
+                        </div>
+                    </div>
+                </div>
+                <div id="collapseFive" class="dop-menu panel-collapse collapse">
+                    <ul class="ul-menu-drop">
+                        <li><a href="#"><img src="img/right-arrow.svg" height="12px" alt="right">Домашние</a></li>
+                        <li><a href="#"><img src="img/right-arrow.svg" height="12px" alt="right">Офисные</a></li>
+                        <li><a href="#"><img src="img/right-arrow.svg" height="12px" alt="right">Вендинговые</a></li>
+                        <li><a href="#"><img src="img/right-arrow.svg" height="12px" alt="right">Для бизнеса</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 el-second-menu panel"  data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                <img src="img/lose-weight.svg" alt="Chair">
+                <div class="text">
+                    <div class="row row-sec">
+                        <div class="col-lg-3 img-cat-block">
+                            <img src="img/ok-mark.svg" class="img-cat" alt="Chair">
+                        </div>
+                        <div class="col-lg-9 text-cat">
+                            Фитнес тренажеры
+                        </div>
+                        <div class="col-lg-12 text-center down">
+                            <img src="img/down.svg" width="20px" alt="Down">
+                        </div>
+                    </div>
+                </div>
+                <div id="collapseSix" class="dop-menu panel-collapse collapse">
+                    <ul class="ul-menu-drop">
+                        <li><a href="#"><img src="img/right-arrow.svg" height="12px" alt="right">Домашние</a></li>
+                        <li><a href="#"><img src="img/right-arrow.svg" height="12px" alt="right">Офисные</a></li>
+                        <li><a href="#"><img src="img/right-arrow.svg" height="12px" alt="right">Вендинговые</a></li>
+                        <li><a href="#"><img src="img/right-arrow.svg" height="12px" alt="right">Для бизнеса</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container container-catalog">
+    <div class="row">
+
+        <div class="row row-no-m">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-4 title-cat">
+                <div>Статьи
+                    <!--<img src="img/top-games-star.svg" width="25px" alt="OK">-->
+                </div>
+                <div class="line"></div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-8 text-right">
+                <ol class="breadcrumb breadcrumb2">
+                    <li><a href="#">Главная</a></li>
+                    <li class="active">Статьи</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="row row-news row-no-m">
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 news-block news-p-blocks">
+            <div class="row news">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img_wrap">
+                    <img src="img/news2.jpg" alt="news">
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="title-news">Новые массажные кровати уже в продаже</div>
+                    <div class="date-news">14.10.2018</div>
+                    <div class="mini-desc-news">
+                        Профессиональный массаж невозможен без специального оборудования – кушеток и столов
+                    </div>
+                    <div class="more-news more-news-y">
+                        <a href="#">Читать полностью <img src="img/right-go.svg" alt="right" width="15px"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 news-block news-p-blocks">
+                <div class="row news">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img_wrap">
+                        <img src="img/news2.jpg" alt="news">
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="title-news">Новые массажные кровати уже в продаже</div>
+                        <div class="date-news">14.10.2018</div>
+                        <div class="mini-desc-news">
+                            Профессиональный массаж невозможен без специального оборудования – кушеток и столов
+                        </div>
+                        <div class="more-news more-news-y">
+                            <a href="#">Читать полностью <img src="img/right-go.svg" alt="right" width="15px"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 news-block news-p-blocks">
+                <div class="row news">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img_wrap">
+                        <img src="img/news2.jpg" alt="news">
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="title-news">Новые массажные кровати уже в продаже</div>
+                        <div class="date-news">14.10.2018</div>
+                        <div class="mini-desc-news">
+                            Профессиональный массаж невозможен без специального оборудования – кушеток и столов
+                        </div>
+                        <div class="more-news more-news-y">
+                            <a href="#">Читать полностью <img src="img/right-go.svg" alt="right" width="15px"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 news-block news-p-blocks">
+                <div class="row news">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img_wrap">
+                        <img src="img/news2.jpg" alt="news">
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="title-news">Новые массажные кровати уже в продаже</div>
+                        <div class="date-news">14.10.2018</div>
+                        <div class="mini-desc-news">
+                            Профессиональный массаж невозможен без специального оборудования – кушеток и столов
+                        </div>
+                        <div class="more-news more-news-y">
+                            <a href="#">Читать полностью <img src="img/right-go.svg" alt="right" width="15px"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 news-block news-p-blocks">
+                <div class="row news">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img_wrap">
+                        <img src="img/news2.jpg" alt="news">
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="title-news">Новые массажные кровати уже в продаже</div>
+                        <div class="date-news">14.10.2018</div>
+                        <div class="mini-desc-news">
+                            Профессиональный массаж невозможен без специального оборудования – кушеток и столов
+                        </div>
+                        <div class="more-news more-news-y">
+                            <a href="#">Читать полностью <img src="img/right-go.svg" alt="right" width="15px"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 news-block news-p-blocks">
+                <div class="row news">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img_wrap">
+                        <img src="img/news2.jpg" alt="news">
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="title-news">Новые массажные кровати уже в продаже</div>
+                        <div class="date-news">14.10.2018</div>
+                        <div class="mini-desc-news">
+                            Профессиональный массаж невозможен без специального оборудования – кушеток и столов
+                        </div>
+                        <div class="more-news more-news-y">
+                            <a href="#">Читать полностью <img src="img/right-go.svg" alt="right" width="15px"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 news-block news-p-blocks">
+                <div class="row news">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img_wrap">
+                        <img src="img/news2.jpg" alt="news">
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="title-news">Новые массажные кровати уже в продаже</div>
+                        <div class="date-news">14.10.2018</div>
+                        <div class="mini-desc-news">
+                            Профессиональный массаж невозможен без специального оборудования – кушеток и столов
+                        </div>
+                        <div class="more-news more-news-y">
+                            <a href="#">Читать полностью <img src="img/right-go.svg" alt="right" width="15px"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 news-block news-p-blocks">
+                <div class="row news">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img_wrap">
+                        <img src="img/news2.jpg" alt="news">
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="title-news">Новые массажные кровати уже в продаже</div>
+                        <div class="date-news">14.10.2018</div>
+                        <div class="mini-desc-news">
+                            Профессиональный массаж невозможен без специального оборудования – кушеток и столов
+                        </div>
+                        <div class="more-news more-news-y">
+                            <a href="#">Читать полностью <img src="img/right-go.svg" alt="right" width="15px"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <nav class="text-center">
+            <ul class="pagination">
+                <li><a href="#"> Предыдущая </a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#"> Следующая </a></li>
+            </ul>
+        </nav>
+
+    </div>
+</div>
+
+<div class="white-block white-block-pad">
+    <div class="container">
+
+
+    </div>
+</div>
+
+
+<nav class="navbar navbar-default navbar-default-с">
+    <div class="container container-menu">
+        <div class="navbar-header">
+
+            <div class="an-logo col-xs-4"><img src="img/logo3-small2.png" alt="Logo"></div>
+            <div class="col-xs-7 number-phone-block text-right num-foot"><div class="number-phone number-phone2">8 (800) 333-00-22<br><div>звонок бесплатный</div></div></div>
+
+        </div>
+
+        <div class="collapse navbar-collapse navbar-collapse-c">
+            <ul class="nav navbar-nav navbar-nav-c">
+                <div class="phone-menu">
+                    <div class="number-phone text-center">8 (800) 333-00-22<br><div>звонок бесплатный</div></div>
+                </div>
+                <li class="active"><a href="#">Главная -</a></li>
+                <li><a href="#">Каталог -</a></li>
+                <li><a href="#">Акции -</a></li>
+                <li><a href="#">Скидки -</a></li>
+                <li><a href="#">Доставка и оплата -</a></li>
+                <li><a href="#">Полезная информация -</a></li>
+                <li><a href="#">Контакты -</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="white-block white-block4">
+    <div class="container main-cont">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 logo-block">
+                <a href="#"><img src="img/logo3.png" alt="Logo"></a>
+            </div>
+            <div class="col-lg-offset-5 col-md-offset-4 col-sm-offset-3 col-lg-4 col-md-5 col-sm-6">
+                <div class="row">
+                    <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-lg-10 col-md-10 col-sm-10 number-phone-block text-right"><div class="number-phone">8 (800) 333-00-22<br><div>звонок бесплатный</div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-sm-5 col-md-5 mini-desc-news footer-txt">
+                2011–2018 «Vibromassage.ru». Все права защищены.
+                При полном или частичном использовании материалов ссылка на наш сайт обязательна.
+            </div>
+            <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-1 col-lg-4 col-md-4 col-sm-6">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 mini-desc-news footer-txt2">
+                        Мы принимаем к оплате:
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4 money-img">
+                                <img src="img/yandex.jpg" width="100%" alt="money">
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 money-img">
+                                <img src="img/webmoney.png" width="100%" alt="money">
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 money-img">
+                                <img src="img/viza.jpg" width="100%" alt="money">
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12"></div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 money-img">
+                                <img src="img/master.jpg" width="100%" alt="money">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 money-img">
+                                <img src="img/credit.jpg" width="100%" alt="money">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>
