@@ -1,0 +1,182 @@
+@font-face {
+    font-family: AvertaCyrillicBlack; /* Имя шрифта */
+    src: url(../fonts/AvertaCyrillicBlack.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: AvertaCyrillicBlackItalic; /* Имя шрифта */
+    src: url(../fonts/AvertaCyrillicBlackItalic.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: AvertaCyrillicBold; /* Имя шрифта */
+    src: url(../fonts/AvertaCyrillicBold.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: AvertaCyrillicBoldItalic; /* Имя шрифта */
+    src: url(../fonts/AvertaCyrillicBoldItalic.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: AvertaCyrillicExtraBold; /* Имя шрифта */
+    src: url(../fonts/AvertaCyrillicExtraBold.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: AvertaCyrillicExtraBoldItalic; /* Имя шрифта */
+    src: url(../fonts/AvertaCyrillicExtraBoldItalic.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: AvertaCyrillicExtraThin; /* Имя шрифта */
+    src: url(../fonts/AvertaCyrillicExtraThin.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: AvertaCyrillicExtraThinItalic; /* Имя шрифта */
+    src: url(../fonts/AvertaCyrillicExtraThinItalic.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: AvertaCyrillicLight; /* Имя шрифта */
+    src: url(../fonts/AvertaCyrillicLight.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: AvertaCyrillicLightItalic; /* Имя шрифта */
+    src: url(../fonts/AvertaCyrillicLightItalic.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: AvertaCyrillicRegular; /* Имя шрифта */
+    src: url(../fonts/AvertaCyrillicRegular.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: AvertaCyrillicRegularItalic; /* Имя шрифта */
+    src: url(../fonts/AvertaCyrillicRegularItalic.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: AvertaCyrillicSemiBold; /* Имя шрифта */
+    src: url(../fonts/AvertaCyrillicSemiBold.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: AvertaCyrillicSemiBoldItalic; /* Имя шрифта */
+    src: url(../fonts/AvertaCyrillicSemiBoldItalic.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: AvertaCyrillicThin; /* Имя шрифта */
+    src: url(../fonts/AvertaCyrillicThin.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: AvertaCyrillicThinItalic; /* Имя шрифта */
+    src: url(../fonts/AvertaCyrillicThinItalic.otf); /* Путь к файлу со шрифтом */
+}
+
+
+.main-block{
+    position: relative;
+    width: 1000px;
+    height: 800px;
+    margin: auto;
+}
+.main-block > *{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: inherit;
+    height: inherit;
+}
+.back{
+    z-index: 1;
+    background: url(../img/back.svg);
+    background-size: 100%;
+    background-position: -2px;
+    height: 800px;
+}
+.main-block > canvas{
+    z-index: 2;
+    /*border: 1px solid red;*/
+}
+.el{
+    z-index: 3;
+    /*border: 1px solid blue;*/
+}
+.num-but{
+    width: 26px;
+    position: absolute;
+    bottom: 50%;
+    left: 479px;
+    padding-bottom: 25px;
+    transform-origin: 50% 100% 0;
+    /*background: linear-gradient(45deg, #87b354 33%, #63a156 66%, #0f4231);*/
+    /*-webkit-background-clip: text;*/
+    /*-webkit-text-fill-color: transparent;*/
+    color: #87b354;
+}
+.num-but > .active{
+    color: #03794e;
+    padding: 2px 5px;
+    background: #fff;
+    border-radius: 50%;
+    border: 1px solid #03794e;
+}
+.num-but2{ transform: rotate(45deg) }
+.num-but3{ transform: rotate(90deg) }
+.num-but4{ transform: rotate(135deg) }
+.num-but5{ transform: rotate(180deg) }
+.num-but6{ transform: rotate(225deg) }
+.num-but7{ transform: rotate(270deg) }
+.num-but8{ transform: rotate(315deg) }
+
+.num-but > div{
+    text-align: center;
+    font-family: AvertaCyrillicBlack;
+    font-size: 15px;
+    padding-bottom: 0.9px;
+    transition: all 0.3s;
+}
+.num-but > div:hover{
+    cursor: pointer;
+    font-size: 18px;
+}
+.container > .row{
+    padding-top: 30px;
+}
+.title-d{
+    display: inline-block;
+    position: absolute;
+    text-transform: uppercase;
+    font-family: AvertaCyrillicBold;
+    color: #16492c;
+    font-size: 17px;
+}
+.title-d1{
+    left: 380px;
+    top: 40px;
+}
+.title-d2{
+    left: 740px;
+    top: 150px;
+}
+.title-d3{
+    left: 840px;
+    top: 375px;
+}
+.title-d4{
+    left: 740px;
+    top: 620px;
+}
+.title-d5{
+    left: 380px;
+    top: 740px;
+}
+.title-d6{
+    left: 10px;
+    top: 620px;
+}
+.title-d7{
+    left: 10px;
+    top: 385px;
+}
+.title-d8{
+    top: 150px;
+    left: 70px;
+}
+
+.t-error{
+    color: red;
+}
+#screen{
+    display: none;
+}
