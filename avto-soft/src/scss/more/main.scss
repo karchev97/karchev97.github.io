@@ -1,0 +1,90 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+button:focus {
+    outline: none !important;
+}
+
+.container-header {
+    border-bottom: 1px solid $gray;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.hamburger {
+    padding: 17px 12px 11px;
+}
+
+.hamburger-inner, 
+.hamburger-inner::before, 
+.hamburger-inner::after {
+    width: 33px;
+    height: 2px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 20px 25px;
+    margin-bottom: -1px;
+    margin-left: -1px;
+    border: 1px solid $gray;
+    transition: $transition;
+    color: $mainDark;
+
+    &:hover {
+        background-color: $mainLight;
+        border: 1px solid $mainLight;
+    }
+}
+
+.navbar-expand-lg .navbar-nav-right .nav-link {
+    border: 0;
+    padding: 20px 15px;
+
+    &:hover {
+        color: $mainLight;
+        background-color: inherit;
+        border: 0;
+    }
+}
+
+.navbar-brand {
+    background-color: $mainDark;
+    color: $mainLight;
+    margin: 0;
+    padding: 18px 25px;
+    margin-bottom: -1px;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: italic;
+    transition: $transition;
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+.navbar-nav .dropdown-menu {
+    border-radius: 0;
+    border: 1px solid $gray;
+    border-top: 0;
+    top: 98%;
+    left: -1px;
+}
+
+.navbar-nav .dropdown-item {
+    font-size: 12px;
+    font-weight: 500;
+    transition: $transition;
+    color: $mainDark;
+    padding: 7px 12px;
+
+    &:hover {
+        background-color: $mainLight;
+    }
+}
