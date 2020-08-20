@@ -26,6 +26,20 @@
         font-size: 20px;
         margin: 20px 0 10px;
     }
+    .order-header {
+        display: none;
+    }
+    .order-item {
+        padding: 15px;
+        margin-bottom: 7px;
+        &>div {
+            margin-bottom: 12px;
+        }
+    }
+    .container-table,
+    .order-items {
+        max-width: 95%;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -51,6 +65,10 @@
     .navbar-nav .dropdown-item {
         padding-left: 30px;
     }
+    .container-table,
+    .order-items {
+        max-width: 100%;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -65,6 +83,10 @@
         &:not(:first-child) .nav-link {
             border-top: 0;
         }
+    }
+    .container-table,
+    .order-items {
+        max-width: 100%;
     }
 }
 

@@ -236,3 +236,56 @@ button:focus {
     font-size: 24px;
     margin: 30px 0 20px;
 }
+
+.user-name {
+    font-weight: 700;
+}
+
+.container-offset {
+    margin-top: 25px;
+    padding-left: 0;
+    padding-right: 0;
+    &>.row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+.order-items {
+    margin-top: 12px;
+}
+
+.order-header {
+    padding: 8px 12px;
+    border-radius: 4px;
+    &>div {
+        font-size: 11px;
+        font-weight: 500;
+        color: $lightDarkText;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+.order-item {
+    background-color: #fff;
+    padding: 8px 12px;
+    border: 1px solid $gray;
+    border-radius: 4px;
+    margin-bottom: 2px;
+    &:hover {
+        text-decoration: none;
+        box-shadow: 2px 1px 20px -2px rgba(0, 0, 0, 0.06);
+    }
+    &>div {
+        font-size: 12px;
+        font-weight: 500;
+        color: $mainDark;
+        padding-left: 5px;
+        padding-right: 5px;
+        &>span {
+            font-weight: 400;
+            color: $mainDark;
+        }
+    }
+}
