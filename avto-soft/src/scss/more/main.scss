@@ -289,3 +289,75 @@ button:focus {
         }
     }
 }
+
+.title-files {
+    font-size: 13px;
+    color: $mainDark;
+    background-color: #FFE999;
+    padding: 4px 7px;
+    border-radius: 4px;
+    display: inline;
+}
+
+.row-files {
+    margin-top: 12px;
+}
+
+.files-item {
+    background-color: #fff;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 15px;
+    color: $lightDarkText;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid $lightGray;
+    &:hover {
+        text-decoration: none;
+    }
+    &:hover .press-for {
+        top: 0;
+    }
+    &>img {
+        width: 16px;
+        margin-right: 20px;
+    }
+    & .file-date-order {
+        padding-top: 3px;
+        color: $lightDarkText;
+        font-size: 11px;
+        font-weight: 400;
+    }
+}
+
+.file-info {
+    padding-right: 7px;
+    &>div:nth-of-type(1) {
+        color: $lightDarkText;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    &>div:nth-of-type(2) {
+        color: $lightDarkText;
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
+
+.press-for {
+    position: absolute;
+    background-color: $mainLight;
+    color: $mainDark;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -300px;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    transition: $transition;
+}

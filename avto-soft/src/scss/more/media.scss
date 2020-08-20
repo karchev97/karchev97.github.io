@@ -64,7 +64,9 @@
     .navbar-nav .dropdown-item {
         padding-left: 30px;
     }
-    .container-table,
+    .container-table {
+        max-width: 90%;
+    }
     .order-items {
         max-width: 100%;
     }
@@ -83,7 +85,9 @@
             border-top: 0;
         }
     }
-    .container-table,
+    .container-table {
+        max-width: 95%;
+    }
     .order-items {
         max-width: 100%;
     }
