@@ -209,7 +209,8 @@ button:focus {
 }
 
 .signup-next,
-.signup-prev {
+.signup-prev,
+.dropdown-toggle-add-order {
     border-radius: 0;
     font-size: 14px;
     color: $mainDark;
@@ -547,11 +548,13 @@ button:focus {
     font-size: 14px;
     color: $mainDark;
     background-color: #fff;
-    padding: 6px 20px;
+    padding: 9px 20px;
     font-weight: 600;
     border: 1px solid $mainDark;
     transition: $transition;
     width: 100%;
+    display: flex;
+    justify-content: center;
     &:hover {
         cursor: pointer;
         background-color: $mainLight;
@@ -567,7 +570,7 @@ button:focus {
 
 .form-group-add-order {
     background-color: #fff;
-    padding: 25px 15px;
+    padding: 25px;
     border: 1px solid $gray;
     &>div {
         margin-bottom: 12px;
@@ -578,6 +581,7 @@ button:focus {
 }
 
 .dropdown-toggle-add-order {
+    margin-top: 26px;
     padding: 6px 20px;
 }
 
@@ -597,4 +601,30 @@ button:focus {
         outline: none !important;
         color: $mainDark;
     }
+}
+
+.add-order-button-cont {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.file-zone {
+    padding: 10px;
+    border: 1px solid $gray;
+}
+
+#drop_zone {
+    border: 2px dashed $gray;
+    border-radius: 5px;
+    padding: 25px;
+    text-align: center;
+    color: #bbb;
+}
+
+.desc-label {
+    margin-top: 15px;
+}
+
+.custom-radio-order {
+    margin-top: 15px;
 }
