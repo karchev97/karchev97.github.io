@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>StroyPortal</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-header">
+            <div class="address-block">
+                <img class="address-block__icon" src="img/map.svg" alt="Адрес">
+                <div class="address-block__text">Волгоградская область</div>
+            </div>
+            <ul class="top-menu">
+                <li class="top-menu__item">
+                    <a href="#" class="top-menu__item-link">Тендеры</a>
+                </li>
+                <li class="top-menu__item">
+                    <a href="#" class="top-menu__item-link">База подрядчиков</a>
+                </li>
+                <li class="top-menu__item">
+                    <a href="#" class="top-menu__item-link">Другие сервисы 
+                        <img class="top-menu__item-img" src="img/chevron-right.svg" alt="Chevron-right">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <header class="main-header">
+            <img src="img/logo.png" alt="Logo" class="main-header__logo">
+            <button class="main-header__button-catalog" type="button">
+                <img class="main-header__button-catalog-icon" src="img/menu.svg" alt="menu">
+                Каталог
+            </button>
+            <form class="main-header__search" id="search-block">
+                <input type="text" v-model="text" class="main-header__search-input" placeholder="Хочу найти..." @input="inChange()">
+                <div class="autocomplete">
+                    <a href="#" class="autocomplete__result" v-for="(item,key) in result" :key="key" v-html="item"></a>
+                </div>
+                <button class="main-header__search-button">
+                    <img src="img/search.svg" alt="Search">
+                </button>
+            </form>
+            <button class="main-header__button-list" type="button">
+                <img class="main-header__button-list-icon" src="img/list.svg" alt="menu">
+                Список
+            </button>
+            <button class="main-header__avatar" type="button">
+                A
+            </button>
+        </header>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#search-block',
+            data: {
+                text: '',
+                queries: ['Запрос 1', 'Текст', 'Документ', 'Ввод'],
+                result: [],
+            },
+            methods: {
+                inChange: function() {
+                    this.result = [];
+                    let regexp = new RegExp(this.text, 'gi');;
+                    for (let i = 0; i < this.queries.length; i++) {
+                        if (regexp.exec(this.queries[i]) && (this.text != "")) {
+                            let answ = this.queries[i];
+                            let reg = new RegExp(this.text, 'gi');
+                            answ = answ.replace(reg, '<strong>$&</strong>');
+                            this.result.push(answ);
+                        }
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
